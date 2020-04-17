@@ -3,6 +3,7 @@
 @import url(__banner-label/service-page__banner-label.css);
 @import url(__image/service-page__image.css);
 @import url(__popup/service-page__popup.css);
+@import url(__banner-label-caption/service-page__banner-label-caption.css);
 
 .service-page {
   width: 100%;
