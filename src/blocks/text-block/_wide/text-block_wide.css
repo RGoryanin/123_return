@@ -1,3 +1,4 @@
 .text-block_wide {
   width: calc(100% - 56px);
+  float: none;
 }

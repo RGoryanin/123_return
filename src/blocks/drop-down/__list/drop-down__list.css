@@ -1,0 +1,10 @@
+.drop-down .drop-down__list {
+  display: none;
+}
+
+.drop-down:hover .drop-down__list {
+  display: block;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}

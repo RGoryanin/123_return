@@ -1,0 +1,4 @@
+.list.list_no-decoration {
+  list-style-type: none;
+  padding-inline-start: 20px;
+}

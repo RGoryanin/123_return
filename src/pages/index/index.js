@@ -1,6 +1,7 @@
 import './index.css';
 import {
-  popupShow
-} from '../../modules/popupShow';
+  sectionRerurn
+} from "../../modules/sectionReturn";
 
-popupShow ();
+sectionRerurn ();
+

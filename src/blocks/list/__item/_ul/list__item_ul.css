@@ -1,0 +1,10 @@
+.list .list__item_ul:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  background-color: #2673c2!important;
+  position: absolute;
+  margin-left: -15px;
+  margin-top: 5px;
+}
