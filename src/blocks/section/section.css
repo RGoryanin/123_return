@@ -1,4 +1,5 @@
 @import url(__text-block/section__text-block.css);
+@import url(__map/section__map.css);
 @import url(_hidden/section_hidden.css);
 
 .section {
