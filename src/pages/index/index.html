@@ -10,6 +10,30 @@
   <div class="service-page">
     <div class="service-page__container container">
       <h1 class="caption caption_h1">123.ру: Возврат товара</h1>
+      <section class="section recolor recolor_background_white">
+        <div class="section__text-block text-block text-block_wide">
+          <p class="paragraph">
+            К покупкам в интернет-магазине десять лет назад многие относились с недоверием. Конечно, ведь у покупателей возникало множество вопросов: &laquo;Что делать, если мне не подошёл товар?&raquo; &laquo;А если не понравился?&raquo; &laquo;А можно просто отказаться?&raquo; &laquo;А как вернуть?&raquo; &laquo;А у меня акт о неремонтопригодности из АСЦ, что делать?&raquo;
+          </p>
+          <p class="paragraph">
+            Сегодня мы покупаем в сети каждый день. Выбор магазина зависит не только от наличия товара, но и простых и понятных правилах возврата товара при необходимости. Рассказываем для вас.
+          </p>
+        </div>
+      </section>
+      <picture>
+        <source srcset="<%=require('../../img/banner_mob@2x.png')%> 2x, <%=require('../../img/banner_mob.png')%> 1x" media="(max-width: 425px)">
+        <source srcset="<%=require('../../img/banner_table@2x.png')%> 2x, <%=require('../../img/banner_table.png')%> 1x" media="(max-width: 768px)">
+          <source srcset="<%=require('../../img/banner_desc@2x.png')%> 2x, <%=require('../../img/banner_desc.png')%> 1x" media="(min-width: 769px)">
+        <img
+          src="<%=require('../../img/banner_desc.png')%>"
+          alt="Гарантия в 123.ру"
+          srcset="<%=require('../../img/banner_desc@2x.png')%> 2x, <%=require('../../img/banner_desc.png')%> 1x"
+          class="service-page__banner">
+      </picture>
+      <div class="service-page__banner-label">
+        <h2 class="service-page__banner-label-caption caption recolor recolor_font_white caption_h2">Мы работаем по российскому законодательству, и даже лучше</h2>
+      </div>
+    </div>
   </div>
   <div class="background background_hidden"></div>
   <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
