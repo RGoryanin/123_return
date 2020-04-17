@@ -1,0 +1,14 @@
+@import url(__buttons/popup__buttons.css);
+@import url(_hidden/popup_hidden.css);
+
+.popup {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /*background: rgba(0, 0, 0, 0.7);*/
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+}

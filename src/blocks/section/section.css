@@ -1,0 +1,17 @@
+@import url(__text-block/section__text-block.css);
+
+.section {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 40px 0px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 428px) {
+  .section {
+    flex-direction: column;
+  }
+}

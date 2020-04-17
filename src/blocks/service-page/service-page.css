@@ -1,0 +1,11 @@
+@import url(__container/service-page__container.css);
+@import url(__banner/service-page__banner.css);
+@import url(__banner-label/service-page__banner-label.css);
+@import url(__image/service-page__image.css);
+@import url(__popup/service-page__popup.css);
+
+.service-page {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 20px 0 30px;
+}

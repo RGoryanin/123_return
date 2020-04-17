@@ -1,0 +1,17 @@
+@import url(_caption-size/link_caption-size.css);
+@import url(_undeline/link_undeline.css);
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.link:visited {
+  text-decoration: none;
+  color: inherit;
+}
