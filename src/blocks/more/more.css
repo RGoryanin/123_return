@@ -1,7 +1,9 @@
 @import url(__title/more__title.css);
 @import url(__arrow/more__arrow.css);
 @import url(__info/more__info.css);
+@import url(__office/more__office.css);
 @import url(__text-block/more__text-block.css);
+
 
 .more {
   width: 100%;

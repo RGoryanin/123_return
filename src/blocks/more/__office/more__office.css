@@ -1,0 +1,11 @@
+.more__office {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+}
+
+.more__office:last-of-type {
+  border-bottom: none;
+}
