@@ -30,15 +30,15 @@ function returnRegions () {
 
       const moreOffice = document.querySelector(".more__office");
       createAddress.classList.add("more__address");
-      createAddress.textContent = addresses[0].address;
+      createAddress.textContent = "adresss";
       moreOffice.append(createAddress);
 
       createTime.classList.add("more__time");
-      createTime.textContent = addresses[0].time;
+      createTime.textContent = "time";
       moreOffice.append(createTime);
     }
   )
-
+  console.log("")
 }
 
 export { returnRegions };
