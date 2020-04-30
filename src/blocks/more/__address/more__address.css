@@ -1,0 +1,7 @@
+.more__address {
+  font-style: normal;
+}
+
+.more__office:hover .more__address {
+  font-weight: bold;
+}

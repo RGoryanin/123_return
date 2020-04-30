@@ -3,22 +3,27 @@ import {
 } from "./receptionPoints";
 
 function returnRegions () {
-  let cityName;
-  // на случай, если город ищется по ID
-  let cityID;
+  const body = document.getElementById('body');
+  // название города
+  const dataCityName = body.getAttribute('data-city-name');
+  // id города
+  const dataGeoCityID = body.getAttribute('data-geo-city-id');
+
+
   // временно привяжемся к Питеру
   // вот тут надо сделать привязку, по городу на сайте
-  cityName = 'Санкт-Петербург'
 
   // если в массиве есть id - написать условие
+  let cityOfficesO = receptionPoints.find(
+    item => item.city == dataGeoCityID
+  );
 
+  console.log(cityOfficesO);
 
   // ищем город с нашим обозначением cities
   let cityOffices = receptionPoints.find(
-    item => item.city == cityName
+    item => item.city == dataCityName
   );
-
-
 
   /*
   let citiOfficesID = receptionPoints.find(
@@ -31,7 +36,7 @@ function returnRegions () {
   const sectionMoreInfo = section.querySelector(".more__info");
 
   // выводим название города
-  sectionCaptionName.textContent = cityName;
+  sectionCaptionName.textContent = dataCityName;
 
   // начинаем перечисление офисов
   sectionMoreInfo.innerHTML = "";
@@ -51,6 +56,7 @@ function returnRegions () {
     createDiv.append(createTime);
 
     sectionMoreInfo.append(createDiv);
+
   });
 }
 

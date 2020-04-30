@@ -6,6 +6,18 @@
   border-bottom: 1px solid grey;
 }
 
+.more__office:hover {
+  background: #f5f5f5;
+}
+
 .more__office:last-of-type {
   border-bottom: none;
+}
+
+@media screen and (max-width: 767px) {
+  .more__office {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
