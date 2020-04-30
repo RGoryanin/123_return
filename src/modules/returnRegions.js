@@ -14,14 +14,14 @@ function returnRegions () {
 
 
   // ищем город с нашим обозначением cities
-  let cityOffices = receptionPoints.filter(
+  let cityOffices = receptionPoints.find(
     item => item.city == cityName
   );
 
 
 
   /*
-  let citiOfficesID = receptionPoints.filter(
+  let citiOfficesID = receptionPoints.find(
     item => item.city == cityID
   );
   */
@@ -36,14 +36,23 @@ function returnRegions () {
   // начинаем перечисление офисов
   sectionMoreInfo.innerHTML = "";
 
-
-  cityOffices[0].points.forEach (function(){
+  cityOffices.points.forEach (function(point){
     const createDiv = document.createElement('div');
     createDiv.classList.add('more__office');
-    sectionMoreInfo.append(createDiv);
-  });
 
-  console.log(cityOffices[0].points);
+    const createAddress = document.createElement('address');
+    createAddress.classList.add('more__address');
+    createAddress.textContent = point.address;
+    createDiv.append(createAddress);
+
+    const createTime = document.createElement('span');
+    createTime.classList.add('more__time');
+    createTime.textContent = point.time;
+    createDiv.append(createTime);
+
+    sectionMoreInfo.append(createDiv);
+    console.log(point);
+  });
 }
 
 export { returnRegions };
