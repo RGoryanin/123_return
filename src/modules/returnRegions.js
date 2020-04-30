@@ -51,7 +51,6 @@ function returnRegions () {
     createDiv.append(createTime);
 
     sectionMoreInfo.append(createDiv);
-    console.log(point);
   });
 }
 
